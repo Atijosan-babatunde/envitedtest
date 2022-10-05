@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/react-in-jsx-scope": ["off"],
+    "no-unsafe-optional-chaining": ["warn"],
+    "react/no-array-index-key": ["warn"],
+    "@typescript-eslint/no-shadow": ["warn"],
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": ["warn"],
+    "jsx-a11y/no-static-element-interactions": ["warn"],
+    "jsx-a11y/no-noninteractive-element-interactions": ["warn"],
+    "prettier/prettier": "error",
+    "react/jsx-props-no-spreading": ["off"]
+  }
+}

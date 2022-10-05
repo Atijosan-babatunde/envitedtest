@@ -1,0 +1,29 @@
+.create-event {
+  margin-top: 1rem;
+  padding: 2rem;
+
+  .back-button {
+    margin-bottom: 1rem;
+    background: #bdbdbd;
+    padding: 0.3rem 1.5rem;
+  }
+
+  form {
+    label {
+      display: block;
+      margin: 0 1.5rem 1rem 0;
+      font-weight: 600;
+      color: #240d57;
+    }
+    input {
+      margin-left: 1rem;
+    }
+
+    button {
+      background: #240d57;
+      color: #fff;
+      padding: 0.5rem 2rem;
+      border-radius: 0.3rem;
+    }
+  }
+}
